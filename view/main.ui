@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>791</width>
+    <height>489</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tặng quà</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_Fname">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>110</y>
+      <width>251</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 28pt &quot;Arial&quot;;
+border: 2px solid black;
+border: 5px solid rgba(255,255,255,0%);
+border-radius: 10px;
+background: rgba(255,255,255,80%);</string>
+    </property>
+    <property name="text">
+     <string>Name1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_Sname">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>110</y>
+      <width>251</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 28pt &quot;Arial&quot;;
+border: 2px solid black;
+border: 5px solid rgba(255,255,255,0%);
+border-radius: 10px;
+background: rgba(255,255,255,80%);</string>
+    </property>
+    <property name="text">
+     <string>Name2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_Press">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>320</y>
+      <width>251</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 28pt &quot;Arial&quot;;
+border: 2px solid black;
+border: 5px solid rgba(255,255,255,0%);
+border-radius: 10px;
+background: rgb(255, 232, 0);</string>
+    </property>
+    <property name="text">
+     <string>Tặng Quà</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_count">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>40</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Arial&quot;;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string>COUNT: 44</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
