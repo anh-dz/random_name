@@ -67,14 +67,20 @@ background: rgba(255,255,255,80%);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 28pt &quot;Arial&quot;;
-border: 2px solid black;
-border: 5px solid rgba(255,255,255,0%);
-border-radius: 10px;
-background: rgb(255, 232, 0);</string>
+     <string notr="true">border: 0pt;</string>
     </property>
     <property name="text">
-     <string>Tặng Quà</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../assert/gift.png</normaloff>../assert/gift.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>128</width>
+      <height>128</height>
+     </size>
     </property>
    </widget>
    <widget class="QLabel" name="lb_count">
