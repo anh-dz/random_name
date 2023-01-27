@@ -25,5 +25,3 @@ def ran_name():
         return ls_name
     except:
         return ["DONE", "DONE"]
-
-print(ran_name())
