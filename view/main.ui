@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>791</width>
-    <height>489</height>
+    <height>441</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,48 +20,44 @@
    <widget class="QPushButton" name="btn_Fname">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>40</x>
       <y>110</y>
-      <width>251</width>
+      <width>291</width>
       <height>101</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 28pt &quot;Arial&quot;;
-border: 2px solid black;
-border: 5px solid rgba(255,255,255,0%);
-border-radius: 10px;
-background: rgba(255,255,255,80%);</string>
+border: 0pt;
+color: white;</string>
     </property>
     <property name="text">
-     <string>Name1</string>
+     <string>???</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btn_Sname">
     <property name="geometry">
      <rect>
-      <x>490</x>
+      <x>470</x>
       <y>110</y>
-      <width>251</width>
+      <width>291</width>
       <height>101</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 28pt &quot;Arial&quot;;
-border: 2px solid black;
-border: 5px solid rgba(255,255,255,0%);
-border-radius: 10px;
-background: rgba(255,255,255,80%);</string>
+border: 0pt;
+color: white;</string>
     </property>
     <property name="text">
-     <string>Name2</string>
+     <string>???</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btn_Press">
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>320</y>
+      <y>280</y>
       <width>251</width>
       <height>101</height>
      </rect>
@@ -78,26 +74,9 @@ background: rgba(255,255,255,80%);</string>
     </property>
     <property name="iconSize">
      <size>
-      <width>128</width>
-      <height>128</height>
+      <width>90</width>
+      <height>90</height>
      </size>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lb_count">
-    <property name="geometry">
-     <rect>
-      <x>680</x>
-      <y>40</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 16pt &quot;Arial&quot;;
-color: white;</string>
-    </property>
-    <property name="text">
-     <string>COUNT: 44</string>
     </property>
    </widget>
   </widget>

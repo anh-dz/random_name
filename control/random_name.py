@@ -1,27 +1,36 @@
-import random
-import os
-import shutil
+import random, os
 
-count = 0
+def group_ls(N, ls):
+    return [ls[n:n+N] for n in range(0, len(ls), N)]
 
-if os.stat("..\\assert\\ds_cache.txt").st_size == 0:
-    print("Start")
-    shutil.copyfile("..\\assert\\ds.txt", "..\\assert\\ds_cache.txt")
-f_cache = open("..\\assert\\ds_cache.txt", 'r+', encoding="utf8")
+c = -1
+c_odd = False
+with open('assert/ds.txt', 'r', encoding='utf-8') as f:
+    ls = f.read().split('\n')
+    if len(ls)&1:
+        ls.pop(0)
+        c_odd = True
+    random.shuffle(ls)
+    gr_ls = group_ls(2, ls)
 
-ls = f_cache.read().split(", ")
-f_cache.close()
+with open('assert/ds_cd.txt', 'r', encoding='utf-8') as f:
+    ls_cd = f.read().split('\n')
+    ls_cd = [i.split('-') for i in ls_cd]
+    random.shuffle(ls_cd)
+
+ls_all = gr_ls+ls_cd
+if c_odd:
+    ls_all.insert(0, ['NHẬT ANH', 'VŨ QUANG DUY'])
+# print(ls_all)
 
 def ran_name():
-    try:
-        ls_name = []
-        for i in range(2):
-            select = random.randint(0, len(ls)-1)
-            ls_name.append(ls[select])
-            ls.pop(select)
-        f_cache = open("..\\assert\\ds_cache.txt", 'w', encoding='utf8')
-        f_cache.write(', '.join(ls))
-        f_cache.close()
-        return ls_name
-    except:
-        return ["DONE", "DONE"]
+    global c
+    c+=1
+    if c<len(ls_all):
+        return ls_all[c]
+    else:
+        if os.name=='posix':
+            os.system(f'open {os.path.dirname(os.path.abspath(__file__))}/cat.jpg')
+        else:
+            os.system(f'start {os.path.dirname(os.path.abspath(__file__))}/cat.jpg')
+        return ['HAPPY', 'NEW YEAR']
